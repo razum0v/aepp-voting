@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "lint": "eslint --fix . --ext .js,.vue src; exit 0"
+    "lint": "eslint --fix . --ext .js,.vue src; exit 0",
+    "test": "meteor test --once --driver-package meteortesting:mocha"
   },
   "pre-commit": [
     "lint"
